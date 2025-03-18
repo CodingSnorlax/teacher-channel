@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
-import useSampleStore from "../stores/sampleStores";
+import useAuthStore from "../stores/AuthStores";
 
 export const HomePage: React.FC = () => {
   const [imgUrl, setImgUrl] = useState("");
 
-  const { price, amount } = useSampleStore((state) => state);
+  const { price, amount } = useAuthStore((state) => state);
 
   useEffect(() => {
     axios
@@ -31,7 +31,8 @@ export const HomePage: React.FC = () => {
       <h1>這是首頁</h1>
       <h1>這是首頁</h1>
       <h1>
-        我在首頁也可以拿到sample store中的價格:{price} 跟sample store中的數量: {amount}{" "}
+        我在首頁也可以拿到Auth store中的價格:{price} 跟Auth store中的數量:{" "}
+        {amount}{" "}
       </h1>
       <img src={imgUrl} />
       <p>
@@ -41,7 +42,9 @@ export const HomePage: React.FC = () => {
         explicabo illum totam.
       </p>
       <br />
-      <Link to="/login">跳到登入頁</Link>
+      <Link to="/login">我要登入!!!!!</Link>
     </>
   );
 };
+
+export default HomePage;
