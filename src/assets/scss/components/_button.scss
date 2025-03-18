@@ -1,0 +1,73 @@
+//  參考規則
+// @mixin button-variant
+//   $background,
+//   $border,
+//   $color:
+//   $hover-background:
+//   $hover-border:
+//   $hover-color
+//   $active-background:
+//   $active-border:
+//   $active-color:
+//   $disabled-background:
+//   $disabled-border:
+//   $disabled-color:
+
+// @mixin button-outline-variant(
+//   $color,
+//   $color-hover: color-contrast($color),
+//   $active-background: $color,
+//   $active-border: $color,
+//   $active-color: color-contrast($active-background)
+// )
+
+// @mixin button-size($padding-y, $padding-x, $font-size, $border-radius)
+
+.btn-lg {
+  font-weight: 700;
+  width: 100%;
+  max-width: 100%;
+  @include media-breakpoint-up(md) {
+    width: 238px;
+    max-width: 238px;
+  }
+  @include button-size(16px, 16px, 16px, 0);
+}
+
+.btn-primary {
+  @include button-variant(
+    $primary-80,
+    // $background
+    $primary-80,
+    // $border
+    $black,
+    // $color
+    // 沒有按照順序的要加入變數再設定
+    $hover-background: $primary-60,
+    $hover-color: $black,
+    $disabled-color: $nature-80,
+    $disabled-background: $nature-80,
+    $disabled-border: $nature-80
+  );
+}
+
+.btn-outline-primary {
+  @include button-variant(
+    transparent,
+    // $background
+    $black,
+    // $border
+    $black,
+    // $color
+    // 沒有按照順序的要加入變數再設定
+    $hover-background: $nature-95,
+    $hover-border: $black,
+    $hover-color: $black,
+    $active-background: $black,
+    $active-border: $black,
+    $active-color: $white,
+    $disabled-color: $nature-60,
+    $disabled-background: transparent,
+    $disabled-border: $nature-95
+  );
+}

@@ -1,0 +1,108 @@
+// ============ colors ============
+$white: #fff;
+$black: #000;
+
+$primary-30: rgba(102, 62, 0, 1);
+$primary-40: rgba(134, 83, 0, 1);
+$primary-50: rgba(168, 105, 0, 1);
+$primary-60: rgba(200, 129, 25, 1);
+$primary-70: rgba(231, 155, 53, 1);
+$primary-80: rgba(255, 185, 98, 1);
+$primary-90: rgba(255, 221, 185, 1);
+
+$secondary-30: rgba(147, 0, 10, 1);
+$secondary-40: rgba(186, 26, 26, 1);
+$secondary-50: rgba(222, 55, 48, 1);
+$secondary-60: rgba(241, 78, 58, 1);
+$secondary-70: rgba(255, 137, 125, 1);
+$secondary-80: rgba(255, 180, 171, 1);
+$secondary-90: rgba(255, 218, 214, 1);
+
+$nature-10: rgba(28, 27, 27, 1);
+$nature-20: rgba(49, 48, 48, 1);
+$nature-30: rgba(72, 70, 70, 1);
+$nature-40: rgba(96, 94, 93, 1);
+$nature-50: rgba(121, 119, 118, 1);
+$nature-60: rgba(147, 144, 143, 1);
+$nature-70: rgba(173, 170, 170, 1);
+$nature-80: rgba(201, 198, 197, 1);
+$nature-90: rgba(229, 226, 224, 1);
+$nature-95: rgba(241, 240, 240, 1);
+$nature-99: rgba(255, 251, 255, 1);
+
+$custom-colors: (
+  'white': $white,
+  'black': $black,
+  'primary-30': $primary-30,
+  'primary-40': $primary-40,
+  'primary-50': $primary-50,
+  'primary-60': $primary-60,
+  'primary-70': $primary-70,
+  'primary-80': $primary-80,
+  'primary-90': $primary-90,
+  'secondary-30': $secondary-30,
+  'secondary-40': $secondary-40,
+  'secondary-50': $secondary-50,
+  'secondary-60': $secondary-60,
+  'secondary-70': $secondary-70,
+  'secondary-80': $secondary-80,
+  'secondary-90': $secondary-90,
+  'nature-10': $nature-10,
+  'nature-20': $nature-20,
+  'nature-30': $nature-30,
+  'nature-40': $nature-40,
+  'nature-50': $nature-50,
+  'nature-60': $nature-60,
+  'nature-70': $nature-70,
+  'nature-80': $nature-80,
+  'nature-90': $nature-90,
+  'nature-95': $nature-95,
+  'nature-99': $nature-99,
+) !default;
+
+// ============ #colors ============
+
+// ============ Typography ============
+
+// ------ font-size ------
+$font-size-base: 1rem !default;
+
+$font-sizes: (
+  dh1: $font-size-base * 4,
+  // 64px
+  dh2: $font-size-base * 3,
+  // 48px
+  h1: $font-size-base * 2.5,
+  // 40px
+  h2: $font-size-base * 2.375,
+  // 38px
+  h3: $font-size-base * 2,
+  // 32px
+  h4: $font-size-base * 1.75,
+  // 28px
+  h5: $font-size-base * 1.5,
+  // 24px
+  h6: $font-size-base * 1.25,
+  // 20px
+  base: $font-size-base,
+  // 16px
+  sm: $font-size-base * 0.875,
+  // 14px
+  xs: $font-size-base * 0.75,
+  //  12px
+  xxs: $font-size-base * 0.625,
+  //  10px
+) !default;
+// ------ #font-size ------
+
+// ------ headings ------
+
+$headings-font-weight: 700 !default;
+
+// ------ #headings ------
+
+// ------ Body ------
+
+$body-color: $black !default;
+
+// ------ #Body ------

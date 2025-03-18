@@ -1,0 +1,17 @@
+//  ============ 自定義間距 (key 0 - 50 ， 0.5 間隔) ============
+@for $i from 0 through 100 {
+  $key: $i * 0.5;
+  $value: $spacer * ($key * 0.25); // 以 4 px為計算單位
+  //  if($condition, $if-true, $if-false)
+  // 處理 key，將小數點換成 \.，避免 SCSS 誤判
+  $key: if(str-index('#{$key}', '.'), str-replace('#{$key}', '.', '\\.'), $key);
+
+  $spacers: map-merge(
+    $spacers,
+    (
+      $key: $value,
+    )
+  );
+}
+// ============ 自定義顏色 ============
+$theme-colors: map-merge($theme-colors, $custom-colors);
