@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import useAuthStore from "../stores/AuthStores";
+import "../styles/main.scss";
 
 interface LoginForm {
   email: string;
@@ -100,8 +100,8 @@ export const LoginPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
+    <div className="flex flex-col justify-center items-center gap-6 p-7 md:flex-row shadow-md hover:bg-gray-100">
+      <div className="bg-white rounded-2xl p-7 shadow-md min-w-[40vw]">
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
             登入您的帳號
