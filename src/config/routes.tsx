@@ -5,8 +5,9 @@ import useAuthStore from "../stores/AuthStores";
 import ProfilePage from "../pages/ProfilePage";
 
 // 使用 lazy loading 加載頁面組件
-const HomePage = lazy(() => import("../pages/HomePage"));
-const LoginPage = lazy(() => import("../pages/LoginPage"));
+const HomePage = lazy(() => import("@/pages/HomePage"));
+const LoginPage = lazy(() => import("@/pages/LoginPage"));
+const CourseCreationPage = lazy(() => import("@/pages/CourseCreationPage"));
 
 // 權限路由組件
 const PrivateRoute: React.FC<{ children: React.ReactNode }> = ({
@@ -55,6 +56,14 @@ export const routes = [
     element: (
       <PublicRoute>
         <LoginPage />
+      </PublicRoute>
+    ),
+  },
+  {
+    path: "/course-creation",
+    element: (
+      <PublicRoute>
+        <CourseCreationPage />
       </PublicRoute>
     ),
   },
