@@ -7,4 +7,9 @@ export default defineConfig({
   css: {
     postcss: './postcss.config.js',
   },
+  resolve: {
+    alias: {
+      '@': '/src',  // 確保這裡指向了 src 目錄
+    },
+  },
 })

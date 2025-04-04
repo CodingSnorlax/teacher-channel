@@ -2,6 +2,7 @@
 import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { routes } from "./config/routes";
+import { Navbar } from "@/components/NavBar";
 // import { HomePage } from "./pages/HomePage";
 // import { LoginPage } from "./views/LoginPage/LoginPage";
 // import { NotFoundPage } from "./views/NotFoundPage/NotFoundPage";
@@ -19,7 +20,7 @@ export const App: React.FC = () => {
   return (
     <>
       <div className="App">
-        {/* <NavbarComponent /> */}
+        <Navbar />
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>
             {routes.map((route, index) => (
