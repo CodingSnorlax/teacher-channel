@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import TextEditorComponent from "@/components/TextEditor/TextEditorComponent";
 
 const CourseCreationPage: React.FC = () => {
